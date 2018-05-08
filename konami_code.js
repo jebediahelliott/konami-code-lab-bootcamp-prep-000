@@ -17,10 +17,9 @@ function init() {
       index++;
       if(index === code.length) {
         alert("Huzzah");
-      }
-      else {
         index = 0;
       }
     }
+    index = 0;
   }
 }
