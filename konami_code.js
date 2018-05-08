@@ -19,7 +19,7 @@ function init() {
         alert("Huzzah");
         index = 0;
       }
-      
+    index = 0;  
     }
   }
 }
