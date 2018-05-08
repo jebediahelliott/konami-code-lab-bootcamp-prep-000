@@ -16,7 +16,8 @@ function init() {
     let key = (e.key);
     if(key === code[index]) {
       index++;
-      
+              debugger;
+
       if(index === code.length) {
         alert("Huzzah");
         index = 0;
