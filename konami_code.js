@@ -17,7 +17,7 @@ function init() {
     if(key === code[index]) {
       index++;
       if(index === code.length) {
-        
+        debugger;
         alert("Huzzah");
         index = 0;
       }
