@@ -10,7 +10,7 @@ const code = ["ArrowUp", "ArrowUp", "ArrowDown",
 function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown',
-    huzzah);
+    huzzah(e));
   let index = 0;
   function huzzah(e) {
     
