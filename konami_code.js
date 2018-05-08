@@ -11,8 +11,8 @@ function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', huzzah);
   let index = 0;
-  function huzzah(KeyboardEvent) {
-    let key = (KeyboardEvent.key);
+  function huzzah(e) {
+    let key = (e.key);
     while(key === code[index]) {
       index++;
       if(index === code.length) {
