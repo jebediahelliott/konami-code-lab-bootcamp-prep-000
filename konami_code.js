@@ -19,7 +19,9 @@ function init() {
         alert("Huzzah");
         index = 0;
       }
-    index = 0;  
+    }
+    else {
+      index = 0;
     }
   }
 }
