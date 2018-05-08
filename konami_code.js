@@ -12,11 +12,12 @@ function init() {
   document.body.addEventListener('keydown', huzzah);
   let index = 0;
   function huzzah(e) {
-    debugger;
+    
     let key = (e.key);
     if(key === code[index]) {
       index++;
       if(index === code.length) {
+        
         alert("Huzzah");
         index = 0;
       }
