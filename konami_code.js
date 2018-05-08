@@ -12,7 +12,7 @@ function init() {
   document.body.addEventListener('keydown', huzzah);
   let index = 0;
   function huzzah(e) {
-    let key = (e.key);
+    let key = (ke.key);
     while(key === code[index]) {
       index++;
       if(index === code.length) {
