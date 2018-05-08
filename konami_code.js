@@ -1,20 +1,26 @@
-const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-let index = 0;
-const body = document.getElementsByTagName('body');
-function init(e) {
+const code = ["ArrowUp", "ArrowUp", "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a"];
+
+function init() {
   // Write your JavaScript code inside the init() function
-  const key = parseInt(e.detail || e.which);
-  if(key === code[index]) {
-    index++;
-    if(index === code.length) {
-      alert("Huzzah!");
-      index = 0;
+  document.body.addEventListener('keydown', huzzah);
+  let index = 0;
+  function huzzah(e) {
+    let key = (e.key);
+    while(key === code[index]) {
+      index++;
+      if(index === code.length) {
+        alert("Huzzah");
+      }
+      else {
+        index = 0;
+      }
     }
   }
-  else {
-    index = 0;
-  }
-}
-body.addEventListener('keydown', init); {
-  
 }
