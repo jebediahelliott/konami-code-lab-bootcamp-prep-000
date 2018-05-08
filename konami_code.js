@@ -12,6 +12,7 @@ function init() {
   document.body.addEventListener('keydown', huzzah);
   let index = 0;
   function huzzah(e) {
+    console.log(e);
     let key = (e.key);
     if(key === code[index]) {
       index++;
