@@ -14,7 +14,7 @@ function init() {
   let index = 0;
   function huzzah(e) {
     
-    let key = (e.key);
+    let key = parseInt(e.key);
     console.log(key);
     if(key === code[index]) {
       index++;
