@@ -15,6 +15,7 @@ function init() {
   function huzzah(e) {
     
     let key = (e.key);
+    console.log(key);
     if(key === code[index]) {
       index++;
       if(index === code.length) {
