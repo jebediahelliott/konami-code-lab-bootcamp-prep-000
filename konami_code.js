@@ -13,13 +13,13 @@ function init() {
   let index = 0;
   function huzzah(e) {
     let key = (e.key);
-    while(key === code[index]) {
+    if(key === code[index]) {
       index++;
       if(index === code.length) {
         alert("Huzzah");
         index = 0;
       }
+      
     }
-    index = 0;
   }
 }
