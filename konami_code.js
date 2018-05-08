@@ -5,8 +5,6 @@ function init() {
   document.body.addEventListener('keydown',
     huzzah);
   let index = 0;
-  function huzzah(e) {
-    
     let key = parseInt(e.detail || e.which);
     console.log(key);
     if(key === code[index]) {
