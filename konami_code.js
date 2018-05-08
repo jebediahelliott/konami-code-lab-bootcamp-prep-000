@@ -9,7 +9,7 @@ const code = ["ArrowUp", "ArrowUp", "ArrowDown",
 
 function init() {
   // Write your JavaScript code inside the init() function
-  document.body.addEventListener('keydown', function(e) {
+  document.body.addEventListener('keydown', {
     huzzah(e)
   });
   let index = 0;
@@ -19,8 +19,6 @@ function init() {
     debugger;
     if(key === code[index]) {
       index++;
-              
-
       if(index === code.length) {
         alert("Huzzah");
         index = 0;
